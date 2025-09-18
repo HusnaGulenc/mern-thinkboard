@@ -36,7 +36,4 @@ npm run dev
 
 ## Proje Görselleri
 
-![Ekran Görüntüsü 1](./frontend/public/assets/1.png)  
-![Ekran Görüntüsü 2](./frontend/public/assets/2.png)  
-![Ekran Görüntüsü 3](./frontend/public/assets/3.png)  
-![Ekran Görüntüsü 4](./frontend/public/assets/4.png) 
+![Ekran Görüntüsü 1](https://github.com/HusnaGulenc/mern-thinkboard/blob/main/frontend/public/assets/1.png?raw=true
