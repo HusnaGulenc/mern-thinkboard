@@ -36,7 +36,7 @@ npm run dev
 
 ## Proje Görselleri
 
-![Ekran Görüntüsü 1](./public/assets/1.png)  
-![Ekran Görüntüsü 2](./public/assets/2.png)  
-![Ekran Görüntüsü 3](./public/assets/3.png)  
-![Ekran Görüntüsü 4](./public/assets/4.png) 
+![Ekran Görüntüsü 1](./frontend/public/assets/1.png)  
+![Ekran Görüntüsü 2](./frontend/public/assets/2.png)  
+![Ekran Görüntüsü 3](./frontend/public/assets/3.png)  
+![Ekran Görüntüsü 4](./frontend/public/assets/4.png) 
