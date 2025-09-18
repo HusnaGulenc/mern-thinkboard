@@ -3,6 +3,110 @@ import Note from "../models/Note.js";
 
 const router = express.Router();
 
+/**
+ * @openapi
+ * /api/notes:
+ *   get:
+ *     summary: Get all notes
+ *     responses:
+ *       200:
+ *         description: Success fetching all notes
+ *       500:
+ *         description: Internal server error
+ *   post:
+ *     summary: Create a note
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - title
+ *               - content
+ *             properties:
+ *               title:
+ *                 type: string
+ *                 example: "My first note"
+ *               content:
+ *                 type: string
+ *                 example: "This is the content of the note"
+ *     responses:
+ *       201:
+ *         description: Created note successfully!
+ *       400:
+ *         description: Bad request (missing title or content)
+ *       500:
+ *         description: Internal server error
+ */
+
+/**
+ * @openapi
+ * /api/notes/{id}:
+ *   get:
+ *     summary: Get a specific note by ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The note ID
+ *     responses:
+ *       200:
+ *         description: Note fetching successfully.
+ *       404:
+ *         description: Note not found
+ *       500:
+ *         description: Internal server error
+ *   put:
+ *     summary: Update a note by ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The note ID
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               title:
+ *                 type: string
+ *                 example: "Updated note title"
+ *               content:
+ *                 type: string
+ *                 example: "updated note content"
+ *             additionalProperties: false
+ *     responses:
+ *       200:
+ *         description: Note updated successfully.
+ *       404:
+ *         description: Note not found
+ *       500:
+ *         description: Internal server error
+ *   delete:
+ *     summary: Delete a note by ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The note ID
+ *     responses:
+ *       200:
+ *         description: Note deleted successfully.
+ *       404:
+ *         description: Note not found
+ *       500:
+ *         description: Internal server error
+ */
+
 router.get("/", async (req, res) => {
   //this route for getting notes
   try {
