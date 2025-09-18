@@ -14,8 +14,7 @@ Bu proje, temel bir **Not Tutma Uygulaması**dır ve **frontend + backend** dene
 
 **Backend:**  
 - Node.js + Express  
-- MongoDB ile veri yönetimi  
-- CORS & dotenv ile yapılandırma  
+- MongoDB ile veri yönetimi   
 - Swagger ile API dokümantasyonu  
 
 ---
